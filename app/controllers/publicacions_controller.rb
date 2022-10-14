@@ -67,6 +67,6 @@ class PublicacionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def publicacion_params
-      params.require(:publicacion).permit(:titulo, :usuario_id, etiquetum_ids: [])
+      params.require(:publicacion).permit(:titulo, :usuario_id, :foto, etiquetum_ids: [])
     end
 end
